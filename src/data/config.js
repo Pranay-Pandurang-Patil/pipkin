@@ -8,7 +8,7 @@ export const SITE_CONFIG = {
   introLine: "Hi, I’m",
   heroHeading: "Pipkin ✿",
   contact: {
-    email: "hello@pipkinstudio.art",
+    email: "hello.pipkin@proton.me",
     subject: "Hello Pipkin! ✿ Project Inquiry",
     location: "Whispering Meadow Studio",
     timezone: "Garden Standard Time (UTC+2)",

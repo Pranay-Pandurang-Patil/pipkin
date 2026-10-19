@@ -129,8 +129,9 @@ export default function MeetPipkin() {
 
           {/* Character Image Asset with Fallback handling */}
           <picture className="character-picture">
+            <source srcSet={ASSETS.meetWebp} type="image/webp" />
             <img
-              src={ASSETS.character}
+              src={ASSETS.meet}
               alt="Pipkin, an enchanting whimsical 3D character pony adorned with flower garland"
               className="character-img"
               loading="lazy"
