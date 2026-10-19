@@ -131,3 +131,15 @@ button:focus-visible, a:focus-visible {
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(190, 160, 205, 0.85);
 }
+
+/* Pipkin flower cursor (32px, with 64px for high-DPI screens). Hotspot = flower centre.
+   Applied everywhere, including buttons/links; text fields keep the I-beam. */
+html, body, *, *::before, *::after {
+  cursor: url('/cursors/pipkin-cursor-32.png') 16 16, auto !important;
+  cursor: -webkit-image-set(url('/cursors/pipkin-cursor-32.png') 1x, url('/cursors/pipkin-cursor-64.png') 2x) 16 16, auto !important;
+  cursor: image-set(url('/cursors/pipkin-cursor-32.png') 1x, url('/cursors/pipkin-cursor-64.png') 2x) 16 16, auto !important;
+}
+input:not([type='button']):not([type='submit']):not([type='checkbox']):not([type='radio']), textarea, [contenteditable='true'] {
+  cursor: text !important;
+}
+@media (pointer: coarse) { html, body, * { cursor: auto !important; } }
