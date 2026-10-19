@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="midnightBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070b16" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <radialGradient id="wonderGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.35" />
+      <stop offset="50%" stop-color="#c084fc" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="wireGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#f472b6" />
+      <stop offset="100%" stop-color="#fde047" />
+    </linearGradient>
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="600" height="450" rx="24" fill="url(#midnightBg)" />
+  <circle cx="300" cy="225" r="200" fill="url(#wonderGlow)" />
+
+  <!-- Constellation Grid Lines & Assembly Nodes -->
+  <g stroke="rgba(255, 255, 255, 0.15)" stroke-width="1" stroke-dasharray="4,4">
+    <circle cx="300" cy="225" r="160" fill="none" />
+    <circle cx="300" cy="225" r="110" fill="none" />
+    <line x1="100" y1="225" x2="500" y2="225" />
+    <line x1="300" y1="50" x2="300" y2="400" />
+    <line x1="160" y1="85" x2="440" y2="365" />
+    <line x1="160" y1="365" x2="440" y2="85" />
+  </g>
+
+  <!-- Glowing Stars -->
+  <g fill="#ffeaa7" opacity="0.8">
+    <circle cx="120" cy="80" r="2" />
+    <circle cx="210" cy="60" r="3" />
+    <circle cx="480" cy="90" r="2.5" />
+    <circle cx="520" cy="210" r="2" />
+    <circle cx="90" cy="330" r="2.5" />
+    <circle cx="480" cy="380" r="3" />
+    <circle cx="250" cy="400" r="2" />
+  </g>
+
+  <!-- Floating 3D Assembly Wireframe Polyhedron (Pipkin's Heart Core) -->
+  <g transform="translate(300, 225)" filter="url(#neonGlow)">
+    <!-- 3D Icosahedron / Crystal Wireframe -->
+    <polygon points="0,-90 78,-45 78,45 0,90 -78,45 -78,-45" stroke="url(#wireGrad)" stroke-width="2.5" fill="rgba(244, 114, 182, 0.08)" />
+    <polygon points="0,-90 0,90" stroke="#38bdf8" stroke-width="2" />
+    <polygon points="-78,-45 78,45" stroke="#38bdf8" stroke-width="2" />
+    <polygon points="-78,45 78,-45" stroke="#38bdf8" stroke-width="2" />
+    <polygon points="0,-90 45,0 0,90 -45,0" stroke="#f472b6" stroke-width="2" fill="rgba(56, 189, 248, 0.08)" />
+    <polygon points="-78,-45 0,-30 78,-45" stroke="#fde047" stroke-width="1.5" />
+    <polygon points="-78,45 0,30 78,45" stroke="#fde047" stroke-width="1.5" />
+
+    <!-- Core Glowing Energy Sphere -->
+    <circle cx="0" cy="0" r="28" fill="#f43f5e" opacity="0.6" />
+    <circle cx="0" cy="0" r="16" fill="#fde047" />
+    <circle cx="0" cy="0" r="8" fill="#ffffff" />
+
+    <!-- Corner Nodes -->
+    <circle cx="0" cy="-90" r="5" fill="#38bdf8" />
+    <circle cx="78" cy="-45" r="5" fill="#f472b6" />
+    <circle cx="78" cy="45" r="5" fill="#fde047" />
+    <circle cx="0" cy="90" r="5" fill="#38bdf8" />
+    <circle cx="-78" cy="45" r="5" fill="#f472b6" />
+    <circle cx="-78" cy="-45" r="5" fill="#fde047" />
+  </g>
+
+  <!-- Floating Stylized 3D Parts (Mane Strand, Hoof, Star Pendant) -->
+  <g transform="translate(140, 150)" opacity="0.9">
+    <rect x="-35" y="-20" width="70" height="40" rx="10" fill="rgba(255,255,255,0.06)" stroke="#38bdf8" stroke-width="1.5" />
+    <text x="0" y="5" font-family="'DM Sans', sans-serif" font-size="11" fill="#bae6fd" text-anchor="middle">MESH • RIG</text>
+  </g>
+
+  <g transform="translate(460, 150)" opacity="0.9">
+    <rect x="-40" y="-20" width="80" height="40" rx="10" fill="rgba(255,255,255,0.06)" stroke="#f472b6" stroke-width="1.5" />
+    <text x="0" y="5" font-family="'DM Sans', sans-serif" font-size="11" fill="#fbcfe8" text-anchor="middle">PBR SHADER</text>
+  </g>
+
+  <g transform="translate(450, 310)" opacity="0.9">
+    <rect x="-42" y="-20" width="84" height="40" rx="10" fill="rgba(255,255,255,0.06)" stroke="#fde047" stroke-width="1.5" />
+    <text x="0" y="5" font-family="'DM Sans', sans-serif" font-size="11" fill="#fef08a" text-anchor="middle">STARDUST FX</text>
+  </g>
+
+  <g transform="translate(150, 310)" opacity="0.9">
+    <rect x="-42" y="-20" width="84" height="40" rx="10" fill="rgba(255,255,255,0.06)" stroke="#a78bfa" stroke-width="1.5" />
+    <text x="0" y="5" font-family="'DM Sans', sans-serif" font-size="11" fill="#ddd6fe" text-anchor="middle">TOPOLOGY</text>
+  </g>
+</svg>

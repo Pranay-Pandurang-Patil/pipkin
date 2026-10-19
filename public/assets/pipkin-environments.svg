@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="duskSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fdba74" />
+      <stop offset="35%" stop-color="#f472b6" />
+      <stop offset="70%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#4338ca" />
+    </linearGradient>
+    <linearGradient id="hill1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#3730a3" />
+    </linearGradient>
+    <linearGradient id="hill2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4ade80" />
+      <stop offset="100%" stop-color="#15803d" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="450" rx="24" fill="url(#duskSky)" />
+
+  <!-- Mountain Silhouettes -->
+  <polygon points="40,240 180,90 310,240" fill="#6366f1" opacity="0.4" />
+  <polygon points="210,240 370,60 520,240" fill="#4f46e5" opacity="0.5" />
+  <polygon points="380,240 480,110 590,240" fill="#4338ca" opacity="0.6" />
+
+  <!-- Rolling Hills -->
+  <path d="M 0 260 Q 150 200 320 260 T 600 230 L 600 450 L 0 450 Z" fill="url(#hill1)" opacity="0.75" />
+  <path d="M 0 310 Q 220 250 420 320 T 600 290 L 600 450 L 0 450 Z" fill="url(#hill2)" />
+
+  <!-- Cobblestone Pathway -->
+  <path d="M 280 450 Q 250 370 210 320 Q 180 280 160 260" stroke="#fef08a" stroke-width="28" stroke-linecap="round" fill="none" opacity="0.4" />
+  <path d="M 280 450 Q 250 370 210 320 Q 180 280 160 260" stroke="#fde047" stroke-width="4" stroke-dasharray="10,14" fill="none" opacity="0.7" />
+
+  <!-- Flower Cottage nestled in the hills -->
+  <g transform="translate(90, 190)">
+    <rect x="0" y="30" width="100" height="70" rx="6" fill="#fdf4f0" />
+    <!-- Chimney -->
+    <rect x="15" y="-10" width="16" height="40" fill="#991b1b" />
+    <!-- Thatched Blossom Roof -->
+    <polygon points="-15,30 50,-15 115,30" fill="#fb7185" />
+    <!-- Door -->
+    <rect x="35" y="60" width="28" height="40" rx="14" fill="#9a3412" />
+    <circle cx="58" cy="80" r="3" fill="#fef08a" />
+    <!-- Lit Warm Window -->
+    <rect x="68" y="45" width="22" height="22" rx="4" fill="#fde047" />
+    <!-- Vines & Flowers on walls -->
+    <circle cx="8" cy="45" r="5" fill="#f43f5e" />
+    <circle cx="18" cy="55" r="4" fill="#fbbf24" />
+    <circle cx="10" cy="70" r="6" fill="#ec4899" />
+  </g>
+
+  <!-- Glowing Lanterns along the pathway -->
+  <g transform="translate(210, 310)">
+    <line x1="0" y1="0" x2="0" y2="40" stroke="#78350f" stroke-width="4" />
+    <circle cx="0" cy="0" r="14" fill="#fef08a" opacity="0.8" />
+    <circle cx="0" cy="0" r="7" fill="#fbbf24" />
+  </g>
+
+  <g transform="translate(260, 390)">
+    <line x1="0" y1="0" x2="0" y2="45" stroke="#78350f" stroke-width="4" />
+    <circle cx="0" cy="0" r="16" fill="#fef08a" opacity="0.8" />
+    <circle cx="0" cy="0" r="8" fill="#fbbf24" />
+  </g>
+
+  <!-- Floating Sunset Sparkles / Fireflies -->
+  <g fill="#fef08a" opacity="0.9">
+    <circle cx="340" cy="270" r="4" />
+    <circle cx="430" cy="340" r="5" />
+    <circle cx="490" cy="280" r="3.5" />
+    <circle cx="380" cy="380" r="4" />
+  </g>
+</svg>

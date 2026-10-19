@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 700" width="100%" height="100%">
+  <defs>
+    <linearGradient id="charBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff5f5" />
+      <stop offset="50%" stop-color="#fae8eb" />
+      <stop offset="100%" stop-color="#f2d6de" />
+    </linearGradient>
+    <radialGradient id="auraGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fbcfe8" stop-opacity="0.6" />
+      <stop offset="60%" stop-color="#fdf2f8" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="70%" stop-color="#fbf4f0" />
+      <stop offset="100%" stop-color="#f5e6e1" />
+    </linearGradient>
+    <linearGradient id="maneGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f472b6" />
+      <stop offset="50%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#818cf8" />
+    </linearGradient>
+    <linearGradient id="eyeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4c1d95" />
+      <stop offset="50%" stop-color="#7c3aed" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Aura -->
+  <circle cx="300" cy="350" r="260" fill="url(#auraGlow)" />
+
+  <!-- Floating Sparkles and Petals -->
+  <g opacity="0.85">
+    <path d="M 120 180 Q 125 160 145 165 Q 125 170 120 180 Z" fill="#f472b6" />
+    <path d="M 470 200 Q 475 180 495 185 Q 475 190 470 200 Z" fill="#fbbf24" />
+    <circle cx="150" cy="480" r="6" fill="#fbcfe8" />
+    <circle cx="480" cy="440" r="8" fill="#c084fc" />
+    <polygon points="430,120 436,132 448,136 438,144 442,156 430,148 418,156 422,144 412,136 424,132" fill="#fde047" />
+    <polygon points="170,260 174,270 184,272 176,278 180,288 170,282 160,288 164,278 156,272 166,270" fill="#f472b6" />
+  </g>
+
+  <!-- Pipkin Character Silhouette & Details -->
+  <!-- Fluffy Tail -->
+  <path d="M 170 420 C 120 450, 90 540, 140 600 C 180 570, 200 520, 190 460 Z" fill="url(#maneGrad)" filter="url(#softGlow)" />
+  <path d="M 140 450 C 100 480, 80 550, 120 580 C 150 560, 160 520, 150 470 Z" fill="#fda4af" opacity="0.7" />
+
+  <!-- Body -->
+  <ellipse cx="270" cy="450" rx="110" ry="85" fill="url(#bodyGrad)" />
+
+  <!-- Legs -->
+  <!-- Back Left Leg -->
+  <path d="M 190 460 Q 185 550 180 570 C 180 585, 215 585, 215 570 Q 220 520 225 470 Z" fill="#fae8eb" />
+  <!-- Back Right Leg -->
+  <path d="M 235 480 Q 235 550 230 580 C 230 595, 265 595, 265 580 Q 270 530 275 480 Z" fill="url(#bodyGrad)" />
+  <!-- Golden Little Hooves -->
+  <path d="M 180 565 C 180 585, 215 585, 215 565 Z" fill="#fbbf24" />
+  <path d="M 230 575 C 230 595, 265 595, 265 575 Z" fill="#fbbf24" />
+
+  <!-- Front Left Leg -->
+  <path d="M 310 470 Q 315 540 310 575 C 310 590, 345 590, 345 575 Q 350 520 355 470 Z" fill="url(#bodyGrad)" />
+  <!-- Front Right Leg (Joyful pose slightly lifted) -->
+  <path d="M 355 460 Q 375 510 395 530 C 410 540, 425 520, 410 505 Q 385 480 375 445 Z" fill="url(#bodyGrad)" />
+  <path d="M 310 570 C 310 590, 345 590, 345 570 Z" fill="#fbbf24" />
+  <ellipse cx="405" cy="520" rx="14" ry="10" fill="#fbbf24" transform="rotate(-30 405 520)" />
+
+  <!-- Neck -->
+  <path d="M 310 450 C 320 390, 345 350, 370 320 C 385 360, 375 420, 360 450 Z" fill="url(#bodyGrad)" />
+
+  <!-- Head -->
+  <ellipse cx="370" cy="270" rx="80" ry="70" fill="url(#bodyGrad)" />
+  <path d="M 410 270 C 445 280, 465 295, 455 315 C 440 335, 395 325, 380 310 Z" fill="url(#bodyGrad)" />
+
+  <!-- Rosy Cheeks -->
+  <ellipse cx="420" cy="305" rx="16" ry="10" fill="#f472b6" opacity="0.45" filter="url(#softGlow)" />
+  <ellipse cx="340" cy="295" rx="12" ry="8" fill="#f472b6" opacity="0.3" filter="url(#softGlow)" />
+
+  <!-- Little Cute Ears -->
+  <path d="M 330 220 C 320 180, 335 160, 350 170 C 360 180, 355 210, 350 225 Z" fill="url(#bodyGrad)" />
+  <path d="M 335 210 C 330 185, 340 175, 345 180 C 350 185, 348 205, 345 215 Z" fill="#fda4af" />
+  
+  <path d="M 365 215 C 375 170, 395 155, 410 165 C 418 175, 400 205, 385 220 Z" fill="url(#bodyGrad)" />
+  <path d="M 375 205 C 385 180, 398 170, 402 175 C 405 180, 395 200, 388 210 Z" fill="#fda4af" />
+
+  <!-- Big Whimsical Sparkling Eyes -->
+  <ellipse cx="400" cy="265" rx="18" ry="24" fill="url(#eyeGrad)" transform="rotate(5 400 265)" />
+  <!-- Sparkles inside eye -->
+  <ellipse cx="395" cy="254" rx="7" ry="9" fill="#ffffff" />
+  <circle cx="407" cy="275" r="3.5" fill="#ffffff" />
+  <polygon points="400,268 402,272 406,273 403,276 404,280 400,278 396,280 397,276 394,273 398,272" fill="#fbcfe8" />
+  <!-- Eyelashes -->
+  <path d="M 390 245 Q 405 240 422 248" stroke="#4c1d95" stroke-width="3" fill="none" stroke-linecap="round" />
+  <path d="M 416 244 L 424 238" stroke="#4c1d95" stroke-width="2.5" stroke-linecap="round" />
+
+  <!-- Gentle Smile & Nose -->
+  <circle cx="448" cy="298" r="3" fill="#be185d" />
+  <path d="M 436 312 Q 444 322 452 313" stroke="#be185d" stroke-width="2.5" fill="none" stroke-linecap="round" />
+
+  <!-- Luxurious Pastel Mane with Curls -->
+  <path d="M 330 200 C 310 160, 270 200, 250 250 C 230 300, 260 360, 280 370 C 260 340, 270 280, 310 240 Z" fill="url(#maneGrad)" />
+  <path d="M 350 210 C 370 170, 340 130, 320 140 C 290 150, 290 210, 320 220 Z" fill="#f472b6" />
+  <path d="M 330 230 C 350 235, 370 210, 380 225 C 360 235, 340 245, 330 230 Z" fill="#c084fc" />
+
+  <!-- Flower Crown & Clover Garland -->
+  <g transform="translate(340, 195)">
+    <!-- Clover Leaf -->
+    <path d="M 0 0 C -10 -15, 10 -15, 0 0 C -15 -10, -15 10, 0 0 C 10 15, -10 15, 0 0 C 15 10, 15 -10, 0 0" fill="#4ade80" />
+    <circle cx="0" cy="0" r="3" fill="#16a34a" />
+    <!-- Pink Buttercup -->
+    <circle cx="28" cy="10" r="8" fill="#fb7185" />
+    <circle cx="28" cy="10" r="4" fill="#fef08a" />
+    <!-- Golden Star Blossom -->
+    <circle cx="-25" cy="15" r="7" fill="#fde047" />
+    <circle cx="-25" cy="15" r="3" fill="#ea580c" />
+    <!-- White Daisy -->
+    <circle cx="55" cy="25" r="8" fill="#ffffff" />
+    <circle cx="55" cy="25" r="4" fill="#fbbf24" />
+  </g>
+
+  <!-- Glowing Neck Pendant (A tiny golden stardust vial) -->
+  <path d="M 345 385 Q 360 415 375 395" stroke="#fbbf24" stroke-width="2.5" fill="none" />
+  <g transform="translate(362, 410)">
+    <polygon points="0,-12 8,0 0,12 -8,0" fill="#fde047" filter="url(#softGlow)" />
+    <circle cx="0" cy="0" r="4" fill="#ffffff" />
+  </g>
+
+  <!-- Ground Shadow with soft blur -->
+  <ellipse cx="290" cy="590" rx="120" ry="22" fill="#581c87" opacity="0.12" filter="url(#softGlow)" />
+</svg>

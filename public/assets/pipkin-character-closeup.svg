@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="closeupBg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff1f2" />
+      <stop offset="60%" stop-color="#fdf4ff" />
+      <stop offset="100%" stop-color="#fae8eb" />
+    </radialGradient>
+    <radialGradient id="closeupGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f472b6" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="maneGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f472b6" />
+      <stop offset="50%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#818cf8" />
+    </linearGradient>
+    <linearGradient id="eyeGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3b0764" />
+      <stop offset="60%" stop-color="#7e22ce" />
+      <stop offset="100%" stop-color="#f43f5e" />
+    </linearGradient>
+    <filter id="softGlow2" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="600" height="600" rx="32" fill="url(#closeupBg)" />
+  <circle cx="300" cy="300" r="240" fill="url(#closeupGlow)" />
+
+  <!-- Pipkin Face Close-up -->
+  <!-- Mane behind -->
+  <path d="M 120 180 C 80 280, 100 450, 200 520 C 170 420, 160 300, 190 220 Z" fill="url(#maneGrad2)" />
+  <path d="M 450 180 C 500 280, 480 440, 400 520 C 430 420, 440 300, 410 220 Z" fill="url(#maneGrad2)" />
+
+  <!-- Ears -->
+  <path d="M 180 160 C 160 80, 210 50, 240 80 C 255 100, 245 150, 230 180 Z" fill="#ffffff" />
+  <path d="M 195 145 C 185 95, 215 80, 230 95 C 235 105, 230 135, 225 155 Z" fill="#fda4af" />
+
+  <path d="M 370 180 C 355 150, 345 100, 360 80 C 390 50, 440 80, 420 160 Z" fill="#ffffff" />
+  <path d="M 375 155 C 370 135, 365 105, 370 95 C 385 80, 415 95, 405 145 Z" fill="#fda4af" />
+
+  <!-- Head Base -->
+  <ellipse cx="300" cy="320" rx="170" ry="150" fill="#ffffff" />
+  <ellipse cx="300" cy="370" rx="140" ry="110" fill="#fdf4f0" />
+
+  <!-- Rosy Blushing Cheeks -->
+  <ellipse cx="190" cy="390" rx="35" ry="22" fill="#fb7185" opacity="0.4" filter="url(#softGlow2)" />
+  <ellipse cx="410" cy="390" rx="35" ry="22" fill="#fb7185" opacity="0.4" filter="url(#softGlow2)" />
+
+  <!-- Snout & Nose -->
+  <ellipse cx="300" cy="410" rx="60" ry="40" fill="#fff5f5" />
+  <circle cx="285" cy="405" r="5" fill="#f43f5e" />
+  <circle cx="315" cy="405" r="5" fill="#f43f5e" />
+  <path d="M 285 425 Q 300 440 315 425" stroke="#f43f5e" stroke-width="4" fill="none" stroke-linecap="round" />
+
+  <!-- Left Big Magical Eye -->
+  <g transform="translate(200, 280)">
+    <ellipse cx="0" cy="0" rx="34" ry="48" fill="url(#eyeGrad2)" />
+    <!-- Highlights -->
+    <ellipse cx="-10" cy="-18" rx="14" ry="18" fill="#ffffff" />
+    <circle cx="12" cy="18" r="7" fill="#ffffff" />
+    <!-- Star Glint -->
+    <polygon points="4,4 7,12 15,14 8,18 10,26 3,21 -4,26 -2,18 -9,14 -1,12" fill="#fbcfe8" opacity="0.8" />
+    <path d="M -30 -35 Q 0 -50 35 -30" stroke="#3b0764" stroke-width="5" fill="none" stroke-linecap="round" />
+    <path d="M 25 -34 L 38 -45" stroke="#3b0764" stroke-width="4" stroke-linecap="round" />
+  </g>
+
+  <!-- Right Big Magical Eye -->
+  <g transform="translate(400, 280)">
+    <ellipse cx="0" cy="0" rx="34" ry="48" fill="url(#eyeGrad2)" />
+    <!-- Highlights -->
+    <ellipse cx="-10" cy="-18" rx="14" ry="18" fill="#ffffff" />
+    <circle cx="12" cy="18" r="7" fill="#ffffff" />
+    <!-- Star Glint -->
+    <polygon points="4,4 7,12 15,14 8,18 10,26 3,21 -4,26 -2,18 -9,14 -1,12" fill="#fbcfe8" opacity="0.8" />
+    <path d="M -35 -30 Q 0 -50 30 -35" stroke="#3b0764" stroke-width="5" fill="none" stroke-linecap="round" />
+    <path d="M -25 -34 L -38 -45" stroke="#3b0764" stroke-width="4" stroke-linecap="round" />
+  </g>
+
+  <!-- Bangs and Curls -->
+  <path d="M 220 180 C 250 120, 350 120, 380 180 C 340 240, 260 240, 220 180 Z" fill="url(#maneGrad2)" />
+  <path d="M 270 170 C 290 130, 320 130, 340 180 C 320 220, 290 220, 270 170 Z" fill="#f472b6" />
+
+  <!-- Crown of Clover & Buttercups -->
+  <g transform="translate(300, 150)">
+    <!-- Central 4-leaf clover -->
+    <path d="M 0 -8 C -12 -25, 12 -25, 0 -8 C -22 -18, -22 6, 0 -8 C 12 12, -12 12, 0 -8 C 22 6, 22 -18, 0 -8" fill="#22c55e" />
+    <circle cx="0" cy="-8" r="5" fill="#15803d" />
+    <!-- Pink Blossom Left -->
+    <circle cx="-55" cy="5" r="14" fill="#fb7185" />
+    <circle cx="-55" cy="5" r="7" fill="#fef08a" />
+    <!-- Pink Blossom Right -->
+    <circle cx="55" cy="5" r="14" fill="#fb7185" />
+    <circle cx="55" cy="5" r="7" fill="#fef08a" />
+    <!-- Golden Star Left -->
+    <circle cx="-100" cy="20" r="11" fill="#fde047" />
+    <circle cx="-100" cy="20" r="5" fill="#f59e0b" />
+    <!-- Golden Star Right -->
+    <circle cx="100" cy="20" r="11" fill="#fde047" />
+    <circle cx="100" cy="20" r="5" fill="#f59e0b" />
+  </g>
+</svg>

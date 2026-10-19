@@ -1,0 +1,133 @@
+:root {
+  /* Whimsical Pastel Color Palette */
+  --bg-primary: #fdfaf7;
+  --bg-cream: #faf5ee;
+  --bg-blush: #fcedea;
+  --bg-lavender: #f0ecf8;
+  --bg-sage: #eef5ee;
+  --bg-peach: #fdf0ea;
+  --bg-midnight: #0b1120;
+  --bg-midnight-card: #141c33;
+
+  /* Accent & Highlight Colors */
+  --accent-pink: #f28b9f;
+  --accent-pink-soft: #f9d1d9;
+  --accent-rose: #e66282;
+  --accent-peach: #ffb59b;
+  --accent-lavender: #bfaee3;
+  --accent-sage: #9cc5a1;
+  --accent-gold: #ffd166;
+  --accent-star: #ffeaa7;
+
+  /* Text Colors */
+  --text-dark: #2c2533;
+  --text-dark-muted: #6e6479;
+  --text-cream: #fbf7f4;
+  --text-cream-muted: #cfc6d9;
+  --text-accent: #d45b78;
+
+  /* Borders & Shadows */
+  --border-light: rgba(220, 205, 225, 0.45);
+  --border-midnight: rgba(255, 255, 255, 0.12);
+  --shadow-sm: 0 4px 12px rgba(60, 40, 80, 0.04);
+  --shadow-md: 0 8px 24px rgba(60, 40, 80, 0.07);
+  --shadow-lg: 0 16px 40px rgba(60, 40, 80, 0.1);
+  --shadow-glow-pink: 0 0 25px rgba(242, 139, 159, 0.35);
+  --shadow-glow-star: 0 0 25px rgba(255, 234, 167, 0.4);
+
+  /* Typography */
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-hand: 'Caveat', cursive, sans-serif;
+
+  /* Layout */
+  --desktop-hero-width: 48%;
+  --desktop-content-width: 52%;
+  --nav-rail-width: 64px;
+  --border-radius-sm: 8px;
+  --border-radius-md: 16px;
+  --border-radius-lg: 24px;
+  --border-radius-pill: 9999px;
+  --transition-smooth: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-sans);
+  background-color: var(--bg-primary);
+  color: var(--text-dark);
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  line-height: 1.6;
+  overflow-x: hidden;
+  background-color: var(--bg-primary);
+}
+
+/* Reduced Motion Settings */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Typography Helpers */
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+.font-hand {
+  font-family: var(--font-hand);
+}
+
+/* Button & Focus Styles */
+button, a {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+button:focus-visible, a:focus-visible {
+  outline: 2px solid var(--accent-pink);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(240, 230, 245, 0.4);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(210, 185, 220, 0.6);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(190, 160, 205, 0.85);
+}

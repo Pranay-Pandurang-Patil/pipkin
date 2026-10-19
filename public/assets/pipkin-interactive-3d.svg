@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="skyGrad3d" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#312e81" />
+      <stop offset="60%" stop-color="#4f46e5" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+    <linearGradient id="islandTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#86efac" />
+      <stop offset="100%" stop-color="#22c55e" />
+    </linearGradient>
+    <linearGradient id="islandRock" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#64748b" />
+      <stop offset="100%" stop-color="#334155" />
+    </linearGradient>
+    <linearGradient id="waterStream" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#a5f3fc" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="450" rx="24" fill="url(#skyGrad3d)" />
+
+  <!-- Distant Clouds & Stars -->
+  <g fill="#ffffff" opacity="0.4">
+    <circle cx="100" cy="80" r="2" />
+    <circle cx="220" cy="50" r="1.5" />
+    <circle cx="480" cy="110" r="2" />
+    <circle cx="530" cy="60" r="2.5" />
+  </g>
+
+  <!-- Floating Island (Low Poly / Stylized) -->
+  <g transform="translate(300, 250)">
+    <!-- Rock Bottom Point -->
+    <polygon points="-160,0 160,0 80,130 0,160 -80,120" fill="url(#islandRock)" />
+    <!-- Rock Facets -->
+    <polygon points="-160,0 0,0 -80,120" fill="#475569" />
+    <polygon points="0,0 80,130 0,160 -80,120" fill="#334155" />
+    <polygon points="0,0 160,0 80,130" fill="#64748b" />
+
+    <!-- Lush Grass Surface (Isometric Diamond) -->
+    <polygon points="0,-70 180,0 0,70 -180,0" fill="url(#islandTop)" />
+    <polygon points="0,-70 -180,0 0,70" fill="#4ade80" />
+
+    <!-- Little Stylized Cottage on Island -->
+    <g transform="translate(-40, -40)">
+      <polygon points="0,-40 30,-20 30,20 0,0" fill="#fbcfe8" />
+      <polygon points="30,-20 80,-40 80,0 30,20" fill="#f472b6" />
+      <!-- Roof -->
+      <polygon points="0,-40 40,-75 90,-55 30,-20" fill="#be185d" />
+      <!-- Chimney with cute cloud puff -->
+      <rect x="55" y="-75" width="10" height="20" fill="#881337" />
+      <circle cx="60" cy="-85" r="8" fill="#ffffff" opacity="0.75" />
+      <circle cx="70" cy="-95" r="12" fill="#ffffff" opacity="0.6" />
+    </g>
+
+    <!-- Crystal Waterfall pouring into space -->
+    <polygon points="40,25 65,30 60,180 45,180" fill="url(#waterStream)" opacity="0.85" />
+    <!-- Water Splashes -->
+    <ellipse cx="52" cy="180" rx="16" ry="6" fill="#e0f2fe" opacity="0.9" />
+
+    <!-- Stylized Pine / Blossom Trees -->
+    <g transform="translate(80, -20)">
+      <polygon points="0,-50 25,0 -25,0" fill="#f43f5e" />
+      <polygon points="0,-70 20,-30 -20,-30" fill="#fb7185" />
+      <polygon points="0,-90 15,-55 -15,-55" fill="#fda4af" />
+    </g>
+
+    <!-- Floating Glowing Crystal Shards -->
+    <polygon points="-120,-80 -110,-60 -115,-40 -125,-60" fill="#fde047" opacity="0.9" />
+    <polygon points="120,-90 130,-75 125,-60 115,-75" fill="#38bdf8" opacity="0.9" />
+  </g>
+
+  <!-- Interactive 3D Orbit Ring Overlay -->
+  <ellipse cx="300" cy="270" rx="230" ry="90" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="2" stroke-dasharray="6,8" transform="rotate(-10 300 270)" />
+</svg>
